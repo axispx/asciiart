@@ -50,7 +50,7 @@ func main() {
 
 	dc := gg.NewContext(img.Bounds().Max.X, img.Bounds().Max.Y)
 	dc.Clear()
-	err = dc.LoadFontFace("/Library/Fonts/RobotoMono-Regular.ttf", float64(*charsize))
+	err = dc.LoadFontFace("assets/RobotoMono-Regular.ttf", float64(*charsize))
 	if err != nil {
 		log.Fatal(err)
 	}
